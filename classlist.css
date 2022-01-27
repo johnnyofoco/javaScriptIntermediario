@@ -13,10 +13,6 @@
   left: 0%;
 }
 
-.menuMobile.fechado {
-  left: -100%;
-}
-
 .botaoMenu{
   position: absolute;
   top: 20px;

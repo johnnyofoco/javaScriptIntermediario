@@ -1,15 +1,21 @@
 let menuMobile = document.querySelector('.menuMobile')
 let botaoMenu = document.querySelector('.botaoMenu')
 
+let aberto = false
+
 function abrirOuFecharMenu() {
- 
-  if (botaoMenu.innerHTML === 'Fechar menu') {
+
+  if (aberto === true) { 
     menuMobile.classList.remove('aberto')
     menuMobile.classList.add('fechado')
+
+    aberto = false
+
     botaoMenu.innerHTML = 'Abrir menu'
   } else {
-    menuMobile.classList.remove('fechado')
     menuMobile.classList.add('aberto')
+
+    aberto = true
     botaoMenu.innerHTML = 'Fechar menu'
   }
   
