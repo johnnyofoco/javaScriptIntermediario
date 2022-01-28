@@ -1,10 +1,24 @@
 let botaoTeste = document.querySelector('#botaoTeste')
 
-botaoTeste.onclick = function () {
-  console.log('Mensagem 1')
+let contador = 0
+
+function cliqueBotao () {
+  contador++
+
+  console.log(`Mensagem ${contador}`)
+  if (contador >= 5) {
+    console.log(`Fim!`)
+    botaoTeste.removeEventListener('click', cliqueBotao)
+  }
 }
 
-botaoTeste.onclick = function () {
+//addEventListener
+botaoTeste.addEventListener('click', cliqueBotao)
+
+/*botaoTeste.addEventListener('click', function () {
   console.log('Mensagem 2')
-}
+})
+*/
 
+// onclick
+/*botaoTeste.onclick = cliqueBotao*/
