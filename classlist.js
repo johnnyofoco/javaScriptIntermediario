@@ -1,7 +1,7 @@
 let menuMobile = document.querySelector('.menuMobile')
 let botaoMenu = document.querySelector('.botaoMenu')
 
-let aberto = false
+let aberto = false //flag
 
 function abrirOuFecharMenu() {
 
