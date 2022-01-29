@@ -1,24 +1,15 @@
-let botaoTeste = document.querySelector('#botaoTeste')
+let quadrado = document.querySelector('.quadrado')
 
-let contador = 0
-
-function cliqueBotao () {
-  contador++
-
-  console.log(`Mensagem ${contador}`)
-  if (contador >= 5) {
-    console.log(`Fim!`)
-    botaoTeste.removeEventListener('click', cliqueBotao)
-  }
+function minhaFuncao(evento) {
+  console.log(evento.key)
 }
 
-//addEventListener
-botaoTeste.addEventListener('click', cliqueBotao)
+//quadrado.onclick = minhaFuncao
+//quadrado.onmousemove = minhaFuncao
+//quadrado.onmouseenter = minhaFuncao
+//quadrado.onmouseout = minhaFuncao
 
-/*botaoTeste.addEventListener('click', function () {
-  console.log('Mensagem 2')
-})
-*/
 
-// onclick
-/*botaoTeste.onclick = cliqueBotao*/
+//window.addEventListener('resize', minhaFuncao)
+
+//window.addEventListener('keypress',minhaFuncao)
