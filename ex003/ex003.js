@@ -58,22 +58,17 @@ formulario.onsubmit = function (evento) {
     selectEstado.classList.remove('inputError')
     spanSelectEstado.innerText = ''
   }
-     
+
   if (!selectCidade.value) {
     temErro = true
     selectCidade.classList.add('inputError')
     spanSelectCidade.innerText = 'Selecione a cidade!'
-
   } else {
     selectCidade.classList.remove('inputError')
     spanSelectCidade.innerText = ''
   }
+    
   if (!temErro) {
     formulario.submit()
-
-    console.log(`selectEstado: ${selectEstado}`)
-    console.log(`selectCidade: ${selectCidade}`)
-    console.log(`temErro: ${temErro}`)
-
   }
-}//Fim da validação
+} //Fim da validação
