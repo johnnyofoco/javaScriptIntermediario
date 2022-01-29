@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex003</title>
+</head>
+<style>
+  .box {
+    margin-bottom: 20px;
+  }
+
+  .box select {
+    margin-bottom: 10px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .inputError {
+    border: 1px solid red;
+  }
+
+  .erro {
+    color: red;
+  }
+</style>
+
+<body>
+  <form id="formCadastro" action="gravarDados.html">
+    <div class="box estados">
+      <label>Estado</label>
+      <select name="estado" id="estado">
+        <option value="">-- Selecione --</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="sp">São Paulo</option>
+      </select>
+      <span class="erro"></span>
+    </div>
+    
+
+    <div class="box cidades hidden">
+      <label>Cidades</label>
+      <select id="cidade"></select>
+      <span class="erro"></span>
+    </div>
+    
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="ex003.js"></script>
+</body>
+
+</html>
