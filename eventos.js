@@ -12,4 +12,4 @@ function minhaFuncao(evento) {
 
 //window.addEventListener('resize', minhaFuncao)
 
-//window.addEventListener('keypress',minhaFuncao)
+window.addEventListener('keypress',minhaFuncao)
